@@ -16,6 +16,10 @@ import {
   Receipt,
   Send,
   BookMarked,
+  Calculator,
+  Landmark,
+  FileCheck,
+  Wallet,
 } from "lucide-react";
 import { useState } from "react";
 import { useAuthStore } from "@/stores/auth";
@@ -28,6 +32,10 @@ const navItems = [
   { href: "/invoices", label: "Faturalar", icon: Receipt },
   { href: "/e-invoice", label: "E-Fatura / E-Arşiv", icon: Send },
   { href: "/e-ledger", label: "E-Defter", icon: BookMarked },
+  { href: "/tax-declarations", label: "Beyannameler", icon: Calculator },
+  { href: "/bank", label: "Banka", icon: Landmark },
+  { href: "/checks", label: "Çek / Senet", icon: FileCheck },
+  { href: "/cash", label: "Kasa", icon: Wallet },
   { href: "/reports", label: "Raporlar", icon: BarChart3 },
   { href: "/settings", label: "Ayarlar", icon: Settings },
 ];

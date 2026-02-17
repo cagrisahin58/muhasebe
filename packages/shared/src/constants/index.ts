@@ -111,3 +111,107 @@ export const ACCOUNT_TYPES = {
 } as const;
 
 export type AccountType = (typeof ACCOUNT_TYPES)[keyof typeof ACCOUNT_TYPES];
+
+/** Banka Hesap Türleri */
+export const BANK_ACCOUNT_TYPES = {
+  CHECKING: "checking",
+  SAVINGS: "savings",
+  CREDIT: "credit",
+} as const;
+
+export type BankAccountType = (typeof BANK_ACCOUNT_TYPES)[keyof typeof BANK_ACCOUNT_TYPES];
+
+/** Banka Hareket Türleri */
+export const BANK_TRANSACTION_TYPES = {
+  DEPOSIT: "deposit",
+  WITHDRAWAL: "withdrawal",
+  TRANSFER: "transfer",
+  FEE: "fee",
+  INTEREST: "interest",
+} as const;
+
+export type BankTransactionType = (typeof BANK_TRANSACTION_TYPES)[keyof typeof BANK_TRANSACTION_TYPES];
+
+/** Çek/Senet Türleri */
+export const CHECK_TYPES = {
+  RECEIVED_CHECK: "received_check",
+  GIVEN_CHECK: "given_check",
+  RECEIVED_NOTE: "received_note",
+  GIVEN_NOTE: "given_note",
+} as const;
+
+export type CheckType = (typeof CHECK_TYPES)[keyof typeof CHECK_TYPES];
+
+/** Çek/Senet Durumları */
+export const CHECK_STATUSES = {
+  PORTFOLIO: "portfolio",
+  IN_COLLECTION: "in_collection",
+  COLLECTED: "collected",
+  ENDORSED: "endorsed",
+  BOUNCED: "bounced",
+  PAID: "paid",
+  CANCELLED: "cancelled",
+} as const;
+
+export type CheckStatus = (typeof CHECK_STATUSES)[keyof typeof CHECK_STATUSES];
+
+/** Kasa Hareket Türleri */
+export const CASH_TRANSACTION_TYPES = {
+  INCOME: "income",
+  EXPENSE: "expense",
+  TRANSFER: "transfer",
+} as const;
+
+export type CashTransactionType = (typeof CASH_TRANSACTION_TYPES)[keyof typeof CASH_TRANSACTION_TYPES];
+
+/** Beyanname Türleri */
+export const DECLARATION_TYPES = {
+  KDV1: "kdv1",
+  KDV2: "kdv2",
+  MUHTASAR: "muhtasar",
+  GECICI_VERGI: "gecici_vergi",
+  YILLIK_GELIR: "yillik_gelir",
+  YILLIK_KURUMLAR: "yillik_kurumlar",
+  DAMGA: "damga",
+} as const;
+
+export type DeclarationType = (typeof DECLARATION_TYPES)[keyof typeof DECLARATION_TYPES];
+
+/** Beyanname Durumları */
+export const DECLARATION_STATUSES = {
+  DRAFT: "draft",
+  CALCULATED: "calculated",
+  VALIDATED: "validated",
+  SUBMITTED: "submitted",
+  ACCEPTED: "accepted",
+  REVISION_NEEDED: "revision_needed",
+} as const;
+
+export type DeclarationStatus = (typeof DECLARATION_STATUSES)[keyof typeof DECLARATION_STATUSES];
+
+/** Vergi Takvimi */
+export const TAX_CALENDAR = {
+  KDV1_DUE_DAY: 28,
+  MUHTASAR_DUE_DAY: 26,
+  GECICI_VERGI_DUE_DAY: 17,
+} as const;
+
+/** Türk Bankaları */
+export const TURKISH_BANKS = [
+  { code: "0010", name: "T.C. Ziraat Bankası" },
+  { code: "0012", name: "Türkiye Halk Bankası" },
+  { code: "0015", name: "Türkiye Vakıflar Bankası" },
+  { code: "0032", name: "Türk Ekonomi Bankası" },
+  { code: "0046", name: "Akbank" },
+  { code: "0064", name: "Türkiye İş Bankası" },
+  { code: "0067", name: "Yapı ve Kredi Bankası" },
+  { code: "0099", name: "ING Bank" },
+  { code: "0111", name: "QNB Finansbank" },
+  { code: "0134", name: "DenizBank" },
+  { code: "0146", name: "Türkiye Garanti Bankası" },
+  { code: "0203", name: "Alternatifbank" },
+  { code: "0205", name: "Kuveyt Türk" },
+  { code: "0206", name: "Türkiye Finans" },
+  { code: "0210", name: "Ziraat Katılım Bankası" },
+  { code: "0211", name: "Vakıf Katılım Bankası" },
+] as const;

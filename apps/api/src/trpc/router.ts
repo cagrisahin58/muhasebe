@@ -7,6 +7,10 @@ import { reportsRouter } from "./reports.js";
 import { invoicesRouter } from "./invoices.js";
 import { eInvoiceRouter } from "./e-invoice.js";
 import { eLedgerRouter } from "./e-ledger.js";
+import { taxDeclarationsRouter } from "./tax-declarations.js";
+import { bankAccountsRouter } from "./bank-accounts.js";
+import { checksRouter } from "./checks.js";
+import { cashRegistersRouter } from "./cash-registers.js";
 
 export const appRouter = router({
   auth: authRouter,
@@ -17,6 +21,10 @@ export const appRouter = router({
   invoices: invoicesRouter,
   eInvoice: eInvoiceRouter,
   eLedger: eLedgerRouter,
+  taxDeclarations: taxDeclarationsRouter,
+  bankAccounts: bankAccountsRouter,
+  checks: checksRouter,
+  cashRegisters: cashRegistersRouter,
 });
 
 export type AppRouter = typeof appRouter;

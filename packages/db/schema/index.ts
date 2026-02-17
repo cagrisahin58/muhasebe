@@ -6,3 +6,7 @@ export { journalEntries, journalLines } from "./journal-entries.js";
 export { contacts } from "./contacts.js";
 export { invoices, invoiceLines } from "./invoices.js";
 export { auditLogs } from "./audit-logs.js";
+export { bankAccounts, bankTransactions } from "./bank-accounts.js";
+export { checks } from "./checks.js";
+export { cashRegisters, cashTransactions } from "./cash-registers.js";
+export { taxDeclarations } from "./tax-declarations.js";
