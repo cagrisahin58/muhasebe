@@ -10,3 +10,4 @@ export { bankAccounts, bankTransactions } from "./bank-accounts.js";
 export { checks } from "./checks.js";
 export { cashRegisters, cashTransactions } from "./cash-registers.js";
 export { taxDeclarations } from "./tax-declarations.js";
+export { recurringTemplates, notifications } from "./recurring-templates.js";

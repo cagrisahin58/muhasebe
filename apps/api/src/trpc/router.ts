@@ -11,6 +11,9 @@ import { taxDeclarationsRouter } from "./tax-declarations.js";
 import { bankAccountsRouter } from "./bank-accounts.js";
 import { checksRouter } from "./checks.js";
 import { cashRegistersRouter } from "./cash-registers.js";
+import { dashboardRouter } from "./dashboard.js";
+import { recurringRouter } from "./recurring.js";
+import { notificationsRouter } from "./notifications.js";
 
 export const appRouter = router({
   auth: authRouter,
@@ -25,6 +28,9 @@ export const appRouter = router({
   bankAccounts: bankAccountsRouter,
   checks: checksRouter,
   cashRegisters: cashRegistersRouter,
+  dashboard: dashboardRouter,
+  recurring: recurringRouter,
+  notifications: notificationsRouter,
 });
 
 export type AppRouter = typeof appRouter;

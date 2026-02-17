@@ -20,6 +20,7 @@ import {
   Landmark,
   FileCheck,
   Wallet,
+  RefreshCw,
 } from "lucide-react";
 import { useState } from "react";
 import { useAuthStore } from "@/stores/auth";
@@ -36,6 +37,7 @@ const navItems = [
   { href: "/bank", label: "Banka", icon: Landmark },
   { href: "/checks", label: "Çek / Senet", icon: FileCheck },
   { href: "/cash", label: "Kasa", icon: Wallet },
+  { href: "/recurring", label: "Tekrarlayan", icon: RefreshCw },
   { href: "/reports", label: "Raporlar", icon: BarChart3 },
   { href: "/settings", label: "Ayarlar", icon: Settings },
 ];

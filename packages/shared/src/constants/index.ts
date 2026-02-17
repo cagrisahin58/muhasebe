@@ -215,3 +215,25 @@ export const TURKISH_BANKS = [
   { code: "0210", name: "Ziraat Katılım Bankası" },
   { code: "0211", name: "Vakıf Katılım Bankası" },
 ] as const;
+
+/** Tekrarlayan İşlem Periyotları */
+export const RECURRING_FREQUENCIES = {
+  DAILY: "daily",
+  WEEKLY: "weekly",
+  MONTHLY: "monthly",
+  QUARTERLY: "quarterly",
+  YEARLY: "yearly",
+} as const;
+
+export type RecurringFrequency = (typeof RECURRING_FREQUENCIES)[keyof typeof RECURRING_FREQUENCIES];
+
+/** Bildirim Türleri */
+export const NOTIFICATION_TYPES = {
+  TAX_DEADLINE: "tax_deadline",
+  CHECK_DUE: "check_due",
+  INVOICE_OVERDUE: "invoice_overdue",
+  RECURRING_REMINDER: "recurring_reminder",
+  SYSTEM: "system",
+} as const;
+
+export type NotificationType = (typeof NOTIFICATION_TYPES)[keyof typeof NOTIFICATION_TYPES];
