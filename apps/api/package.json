@@ -1,0 +1,38 @@
+{
+  "name": "@finbooks/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/cookie": "^11.0.0",
+    "@fastify/rate-limit": "^10.2.0",
+    "@fastify/helmet": "^13.0.0",
+    "@trpc/server": "^11.0.0",
+    "@trpc/server-adapters-fastify": "npm:@trpc/server@^11.0.0",
+    "argon2": "^0.41.0",
+    "jose": "^6.0.0",
+    "otplib": "^12.0.1",
+    "ioredis": "^5.4.0",
+    "pino": "^9.6.0",
+    "zod": "^3.24.0",
+    "@finbooks/db": "workspace:*",
+    "@finbooks/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^22.0.0"
+  }
+}
