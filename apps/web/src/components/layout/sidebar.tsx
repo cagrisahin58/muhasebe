@@ -13,6 +13,9 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
+  Receipt,
+  Send,
+  BookMarked,
 } from "lucide-react";
 import { useState } from "react";
 import { useAuthStore } from "@/stores/auth";
@@ -22,6 +25,9 @@ const navItems = [
   { href: "/accounts", label: "Hesap Planı", icon: BookOpen },
   { href: "/journal", label: "Yevmiye / Fişler", icon: FileText },
   { href: "/contacts", label: "Cari Hesaplar", icon: Users },
+  { href: "/invoices", label: "Faturalar", icon: Receipt },
+  { href: "/e-invoice", label: "E-Fatura / E-Arşiv", icon: Send },
+  { href: "/e-ledger", label: "E-Defter", icon: BookMarked },
   { href: "/reports", label: "Raporlar", icon: BarChart3 },
   { href: "/settings", label: "Ayarlar", icon: Settings },
 ];
